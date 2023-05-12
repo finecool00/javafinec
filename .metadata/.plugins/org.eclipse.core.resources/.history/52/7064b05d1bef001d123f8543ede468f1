@@ -1,0 +1,31 @@
+package quiz01;
+
+import java.io.StreamTokenizer;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		String s = "-1 -2 -3 Z";
+		
+		String[] arr = s.split(" ");
+
+		System.out.println(Arrays.toString(arr));
+		
+		int answer = 0;
+		int i = 0;
+		while(i < arr.length) {
+			if(arr[i].equals("Z")) {
+				arr[i] = arr[i].replace("Z", "0");
+				answer -= Integer.parseInt(arr[i]);
+				answer -= Integer.parseInt(arr[i-1]);
+			}
+			answer += Integer.parseInt(arr[i]);
+			
+			i++;
+		}
+		System.out.println(answer);
+	}
+}

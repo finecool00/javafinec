@@ -1,0 +1,17 @@
+package quiz01;
+
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+public class Main {
+	
+	public static void main(String[] args) {
+
+		int[] nums = {1, 2, 7, 4};
+		
+		Random random = new Random();
+		
+		System.out.println(nums[random.nextInt(nums.length)]);
+	}
+}

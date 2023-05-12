@@ -1,0 +1,16 @@
+package quiz21;
+
+import java.io.*;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		//지역명, 규모구분, 연도, 월, 분양가격 -> 1행 X 4800개
+		
+		
+		
+		
+	}
+	
+}
