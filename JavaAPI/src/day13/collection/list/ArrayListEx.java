@@ -78,6 +78,7 @@ public class ArrayListEx {
 		list.addAll(list2);
 		System.out.println(list.toString());
 		
+		
 	}
 	
 }
